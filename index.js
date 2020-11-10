@@ -2,19 +2,25 @@ function isPalindrome(str) {
     if (str === null || str === undefined) {
         return false;
     }
-    
-    var input = str;
+
+    let input = str;
     if (typeof(input) !== "string") {
         input = input.toString();
     }
 
-    input = input.replace(/[',.: ]/g, "").toLowerCase();
+    if (input.indexOf(" ") !== -1) {
+        input = input.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    }
 
     for (let i = 0; i < input.length; i++) { 
-        let char = input[i];
-        let otherChar = input[input.length -1 - i];
+        const char = input[i];
+        const otherChar = input[input.length -1 - i];
 
-        if (char != otherChar) {
+        if (i > input.length / 2) {
+            break;
+        }
+
+        if (char !== otherChar) {
             return false;
         }
     }
