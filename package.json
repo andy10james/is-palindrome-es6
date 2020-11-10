@@ -1,0 +1,23 @@
+{
+  "name": "is-palindrome-es6",
+  "version": "1.0.0",
+  "description": "Returns true if the given object as a string is a palindrome, else false.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy10james/is-palindrome-es6.git"
+  },
+  "keywords": [
+    "palindrome",
+    "es6"
+  ],
+  "author": "andrewj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andy10james/is-palindrome-es6/issues"
+  },
+  "homepage": "https://github.com/andy10james/is-palindrome-es6#readme"
+}
