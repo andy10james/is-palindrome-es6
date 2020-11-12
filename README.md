@@ -13,12 +13,16 @@ Using WebPack:
 
 ```js
 import { isPalindrome } from "is-palindrome-es6";
+
+isPalindrome("racecar"); // true
 ```
 
 Using native ES6 modules:
 
 ```js
 import { isPalindrome } from "./node_modules/is-palindrome-es6/index.js";
+
+isPalindrome("racecar"); // true
 ```
 
 ## Customer feedback
