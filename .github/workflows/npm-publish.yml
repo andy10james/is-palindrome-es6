@@ -48,6 +48,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm version --no-git-tag-version ${{ github.event.release.tag_name }}
-      - run: npm publish --registry https://npm.pkg.github.com/andy10james/is-palindrome-es6
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.github_token}}
